@@ -11,13 +11,13 @@ All paths are under `src/main/resources/assets/stardust/textures/`. Sizes are 16
 | `item/stardust_chestplate.png` | placeholder | chestplate silhouette |
 | `item/stardust_leggings.png` | placeholder | leggings silhouette |
 | `item/stardust_boots.png` | placeholder | boots silhouette |
-| `item/wooden_battle_axe.png` | TODO | item icon, handheld |
-| `item/stone_battle_axe.png` | TODO | item icon, handheld |
-| `item/iron_battle_axe.png` | TODO | item icon, handheld |
-| `item/golden_battle_axe.png` | TODO | item icon, handheld |
-| `item/diamond_battle_axe.png` | TODO | item icon, handheld |
-| `item/netherite_battle_axe.png` | TODO | item icon, handheld |
-| `item/stardust_battle_axe.png` | TODO | item icon, handheld |
+| `item/wooden_battle_axe.png` | placeholder | wood-plank head, brown handle |
+| `item/stone_battle_axe.png` | placeholder | gray stone head |
+| `item/iron_battle_axe.png` | placeholder | light gray iron head |
+| `item/golden_battle_axe.png` | placeholder | yellow gold head |
+| `item/diamond_battle_axe.png` | placeholder | cyan diamond head |
+| `item/netherite_battle_axe.png` | placeholder | dark netherite head |
+| `item/stardust_battle_axe.png` | placeholder | violet stardust head |
 | `item/stone_bow.png` | TODO | idle |
 | `item/stone_bow_pulling_0.png` | TODO | charge stage 1 |
 | `item/stone_bow_pulling_1.png` | TODO | charge stage 2 |

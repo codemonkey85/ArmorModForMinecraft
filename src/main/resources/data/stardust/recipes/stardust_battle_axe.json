@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "##",
+    " X"
+  ],
+  "key": {
+    "#": {
+      "item": "stardust:stardust_ingot"
+    },
+    "X": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "stardust:stardust_battle_axe"
+  }
+}

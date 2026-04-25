@@ -4,5 +4,12 @@
   "item.stardust.stardust_helmet": "Stardust Helmet",
   "item.stardust.stardust_chestplate": "Stardust Chestplate",
   "item.stardust.stardust_leggings": "Stardust Leggings",
-  "item.stardust.stardust_boots": "Stardust Boots"
+  "item.stardust.stardust_boots": "Stardust Boots",
+  "item.stardust.wooden_battle_axe": "Wooden Battle Axe",
+  "item.stardust.stone_battle_axe": "Stone Battle Axe",
+  "item.stardust.iron_battle_axe": "Iron Battle Axe",
+  "item.stardust.golden_battle_axe": "Golden Battle Axe",
+  "item.stardust.diamond_battle_axe": "Diamond Battle Axe",
+  "item.stardust.netherite_battle_axe": "Netherite Battle Axe",
+  "item.stardust.stardust_battle_axe": "Stardust Battle Axe"
 }

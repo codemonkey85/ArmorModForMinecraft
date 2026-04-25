@@ -22,6 +22,13 @@ public final class ModCreativeTabs {
                         output.accept(ModItems.STARDUST_CHESTPLATE.get());
                         output.accept(ModItems.STARDUST_LEGGINGS.get());
                         output.accept(ModItems.STARDUST_BOOTS.get());
+                        output.accept(ModItems.WOODEN_BATTLE_AXE.get());
+                        output.accept(ModItems.STONE_BATTLE_AXE.get());
+                        output.accept(ModItems.IRON_BATTLE_AXE.get());
+                        output.accept(ModItems.GOLDEN_BATTLE_AXE.get());
+                        output.accept(ModItems.DIAMOND_BATTLE_AXE.get());
+                        output.accept(ModItems.NETHERITE_BATTLE_AXE.get());
+                        output.accept(ModItems.STARDUST_BATTLE_AXE.get());
                     })
                     .build());
 

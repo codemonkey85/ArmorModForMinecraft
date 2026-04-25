@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "stardust:item/iron_battle_axe"
+  }
+}
