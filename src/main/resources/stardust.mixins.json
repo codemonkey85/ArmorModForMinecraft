@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.codemonkey85.stardust.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "stardust.refmap.json",
+  "mixins": [
+    "EnchantmentMixin",
+    "CrossbowItemMixin"
+  ],
+  "client": [],
+  "server": []
+}
