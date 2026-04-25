@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SS",
+    " X",
+    " X"
+  ],
+  "key": {
+    "S": {
+      "item": "stardust:stardust_ingot"
+    },
+    "X": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "stardust:stardust_hoe"
+  }
+}

@@ -18,6 +18,11 @@ All paths are under `src/main/resources/assets/stardust/textures/`. Sizes are 16
 | `item/diamond_battle_axe.png` | placeholder | cyan diamond head |
 | `item/netherite_battle_axe.png` | placeholder | dark netherite head |
 | `item/stardust_battle_axe.png` | placeholder | violet stardust head |
+| `item/stardust_sword.png` | placeholder | violet diagonal blade |
+| `item/stardust_pickaxe.png` | placeholder | violet horizontal head |
+| `item/stardust_axe.png` | placeholder | violet axe head (slimmer than battle axe) |
+| `item/stardust_shovel.png` | placeholder | violet spade |
+| `item/stardust_hoe.png` | placeholder | violet horizontal head, hoe shape |
 | `item/stone_bow.png` | placeholder | idle |
 | `item/stone_bow_pulling_0.png` | placeholder | charge stage 1 |
 | `item/stone_bow_pulling_1.png` | placeholder | charge stage 2 |
@@ -55,9 +60,10 @@ Path: `models/armor/`. Standard Minecraft armor layer dimensions (64×32 PNGs).
 ## Counts
 
 - 7 battle-axe item icons
+- 5 stardust tool/weapon item icons (sword, pickaxe, axe, shovel, hoe)
 - 4 stardust armor item icons
 - 6 bows × 4 states = 24 bow item icons
 - 1 stardust ingot
 - 2 stardust armor worn-layer textures
 
-**Total: 38 item icons + 2 worn-armor layers = 40 textures.**
+**Total: 41 item icons + 2 worn-armor layers = 43 textures.**

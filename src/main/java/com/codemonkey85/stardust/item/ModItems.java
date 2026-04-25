@@ -2,7 +2,12 @@ package com.codemonkey85.stardust.item;
 
 import com.codemonkey85.stardust.StardustMod;
 import net.minecraft.world.item.ArmorItem;
+import net.minecraft.world.item.AxeItem;
+import net.minecraft.world.item.HoeItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.PickaxeItem;
+import net.minecraft.world.item.ShovelItem;
+import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.Tiers;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -74,6 +79,22 @@ public final class ModItems {
             ITEMS.register("stardust_bow",
                     () -> new TieredBowItem(new Item.Properties().durability(2000).fireResistant(), 14, 2.5f, 18,
                             () -> net.minecraft.world.item.crafting.Ingredient.of(STARDUST_INGOT.get())));
+
+    public static final RegistryObject<Item> STARDUST_SWORD =
+            ITEMS.register("stardust_sword",
+                    () -> new SwordItem(ModTiers.STARDUST, 3, -2.4F, new Item.Properties().fireResistant()));
+    public static final RegistryObject<Item> STARDUST_PICKAXE =
+            ITEMS.register("stardust_pickaxe",
+                    () -> new PickaxeItem(ModTiers.STARDUST, 1, -2.8F, new Item.Properties().fireResistant()));
+    public static final RegistryObject<Item> STARDUST_AXE =
+            ITEMS.register("stardust_axe",
+                    () -> new AxeItem(ModTiers.STARDUST, 5.0F, -3.0F, new Item.Properties().fireResistant()));
+    public static final RegistryObject<Item> STARDUST_SHOVEL =
+            ITEMS.register("stardust_shovel",
+                    () -> new ShovelItem(ModTiers.STARDUST, 1.5F, -3.0F, new Item.Properties().fireResistant()));
+    public static final RegistryObject<Item> STARDUST_HOE =
+            ITEMS.register("stardust_hoe",
+                    () -> new HoeItem(ModTiers.STARDUST, 0, 0.0F, new Item.Properties().fireResistant()));
 
     private ModItems() {}
 }

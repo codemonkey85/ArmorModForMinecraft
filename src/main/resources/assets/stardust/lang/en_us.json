@@ -17,5 +17,10 @@
   "item.stardust.golden_bow": "Golden Bow",
   "item.stardust.diamond_bow": "Diamond Bow",
   "item.stardust.netherite_bow": "Netherite Bow",
-  "item.stardust.stardust_bow": "Stardust Bow"
+  "item.stardust.stardust_bow": "Stardust Bow",
+  "item.stardust.stardust_sword": "Stardust Sword",
+  "item.stardust.stardust_pickaxe": "Stardust Pickaxe",
+  "item.stardust.stardust_axe": "Stardust Axe",
+  "item.stardust.stardust_shovel": "Stardust Shovel",
+  "item.stardust.stardust_hoe": "Stardust Hoe"
 }
