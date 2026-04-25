@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "NDN",
+    "DSD",
+    "NDN"
+  ],
+  "key": {
+    "N": { "item": "minecraft:netherite_ingot" },
+    "D": { "item": "minecraft:diamond" },
+    "S": { "item": "minecraft:nether_star" }
+  },
+  "result": {
+    "item": "stardust:stardust_ingot",
+    "count": 4
+  }
+}
