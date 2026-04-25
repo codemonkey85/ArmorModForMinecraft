@@ -18,6 +18,10 @@ public final class ModCreativeTabs {
                     .icon(() -> new ItemStack(ModItems.STARDUST_INGOT.get()))
                     .displayItems((params, output) -> {
                         output.accept(ModItems.STARDUST_INGOT.get());
+                        output.accept(ModItems.STARDUST_HELMET.get());
+                        output.accept(ModItems.STARDUST_CHESTPLATE.get());
+                        output.accept(ModItems.STARDUST_LEGGINGS.get());
+                        output.accept(ModItems.STARDUST_BOOTS.get());
                     })
                     .build());
 

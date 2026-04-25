@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SSS",
+    "S S",
+    "S S"
+  ],
+  "key": {
+    "S": { "item": "stardust:stardust_ingot" }
+  },
+  "result": {
+    "item": "stardust:stardust_leggings"
+  }
+}

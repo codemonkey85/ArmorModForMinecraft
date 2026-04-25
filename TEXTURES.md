@@ -7,10 +7,10 @@ All paths are under `src/main/resources/assets/stardust/textures/`. Sizes are 16
 | Path | Status | Notes |
 |---|---|---|
 | `item/stardust_ingot.png` | placeholder | violet ingot with sparkles |
-| `item/stardust_helmet.png` | TODO | inventory icon |
-| `item/stardust_chestplate.png` | TODO | inventory icon |
-| `item/stardust_leggings.png` | TODO | inventory icon |
-| `item/stardust_boots.png` | TODO | inventory icon |
+| `item/stardust_helmet.png` | placeholder | helmet silhouette |
+| `item/stardust_chestplate.png` | placeholder | chestplate silhouette |
+| `item/stardust_leggings.png` | placeholder | leggings silhouette |
+| `item/stardust_boots.png` | placeholder | boots silhouette |
 | `item/wooden_battle_axe.png` | TODO | item icon, handheld |
 | `item/stone_battle_axe.png` | TODO | item icon, handheld |
 | `item/iron_battle_axe.png` | TODO | item icon, handheld |
@@ -49,8 +49,8 @@ Path: `models/armor/`. Standard Minecraft armor layer dimensions (64×32 PNGs).
 
 | Path | Status | Notes |
 |---|---|---|
-| `models/armor/stardust_layer_1.png` | TODO | helmet + chestplate + boots layer (64×32) |
-| `models/armor/stardust_layer_2.png` | TODO | leggings layer (64×32) |
+| `models/armor/stardust_layer_1.png` | placeholder | solid violet 64×32, helmet/chest/boots layer |
+| `models/armor/stardust_layer_2.png` | placeholder | solid darker violet 64×32, leggings layer |
 
 ## Counts
 

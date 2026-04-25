@@ -1,4 +1,8 @@
 {
   "itemGroup.stardust.stardust_tab": "Stardust",
-  "item.stardust.stardust_ingot": "Stardust Ingot"
+  "item.stardust.stardust_ingot": "Stardust Ingot",
+  "item.stardust.stardust_helmet": "Stardust Helmet",
+  "item.stardust.stardust_chestplate": "Stardust Chestplate",
+  "item.stardust.stardust_leggings": "Stardust Leggings",
+  "item.stardust.stardust_boots": "Stardust Boots"
 }
