@@ -77,7 +77,7 @@ public final class ModItems {
                             () -> net.minecraft.world.item.crafting.Ingredient.of(net.minecraft.world.item.Items.NETHERITE_INGOT)));
     public static final RegistryObject<Item> STARDUST_BOW =
             ITEMS.register("stardust_bow",
-                    () -> new TieredBowItem(new Item.Properties().durability(2000).fireResistant(), 14, 2.5f, 18,
+                    () -> new TieredBowItem(new Item.Properties().durability(7000).fireResistant(), 14, 2.5f, 18,
                             () -> net.minecraft.world.item.crafting.Ingredient.of(STARDUST_INGOT.get())));
 
     public static final RegistryObject<Item> STARDUST_SWORD =
