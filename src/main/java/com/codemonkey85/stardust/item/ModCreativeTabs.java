@@ -29,6 +29,12 @@ public final class ModCreativeTabs {
                         output.accept(ModItems.DIAMOND_BATTLE_AXE.get());
                         output.accept(ModItems.NETHERITE_BATTLE_AXE.get());
                         output.accept(ModItems.STARDUST_BATTLE_AXE.get());
+                        output.accept(ModItems.STONE_BOW.get());
+                        output.accept(ModItems.IRON_BOW.get());
+                        output.accept(ModItems.GOLDEN_BOW.get());
+                        output.accept(ModItems.DIAMOND_BOW.get());
+                        output.accept(ModItems.NETHERITE_BOW.get());
+                        output.accept(ModItems.STARDUST_BOW.get());
                     })
                     .build());
 

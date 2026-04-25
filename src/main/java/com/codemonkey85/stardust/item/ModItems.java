@@ -50,5 +50,30 @@ public final class ModItems {
             ITEMS.register("stardust_battle_axe",
                     () -> new BattleAxeItem(ModTiers.STARDUST, 5.0F, -3.0F, new Item.Properties().fireResistant()));
 
+    public static final RegistryObject<Item> STONE_BOW =
+            ITEMS.register("stone_bow",
+                    () -> new TieredBowItem(new Item.Properties().durability(500), 19, 0.5f, 5,
+                            () -> net.minecraft.world.item.crafting.Ingredient.of(net.minecraft.world.item.Items.COBBLESTONE)));
+    public static final RegistryObject<Item> IRON_BOW =
+            ITEMS.register("iron_bow",
+                    () -> new TieredBowItem(new Item.Properties().durability(700), 18, 1.0f, 14,
+                            () -> net.minecraft.world.item.crafting.Ingredient.of(net.minecraft.world.item.Items.IRON_INGOT)));
+    public static final RegistryObject<Item> GOLDEN_BOW =
+            ITEMS.register("golden_bow",
+                    () -> new TieredBowItem(new Item.Properties().durability(250), 17, 0.5f, 22,
+                            () -> net.minecraft.world.item.crafting.Ingredient.of(net.minecraft.world.item.Items.GOLD_INGOT)));
+    public static final RegistryObject<Item> DIAMOND_BOW =
+            ITEMS.register("diamond_bow",
+                    () -> new TieredBowItem(new Item.Properties().durability(1100), 16, 1.5f, 10,
+                            () -> net.minecraft.world.item.crafting.Ingredient.of(net.minecraft.world.item.Items.DIAMOND)));
+    public static final RegistryObject<Item> NETHERITE_BOW =
+            ITEMS.register("netherite_bow",
+                    () -> new TieredBowItem(new Item.Properties().durability(1500).fireResistant(), 15, 2.0f, 15,
+                            () -> net.minecraft.world.item.crafting.Ingredient.of(net.minecraft.world.item.Items.NETHERITE_INGOT)));
+    public static final RegistryObject<Item> STARDUST_BOW =
+            ITEMS.register("stardust_bow",
+                    () -> new TieredBowItem(new Item.Properties().durability(2000).fireResistant(), 14, 2.5f, 18,
+                            () -> net.minecraft.world.item.crafting.Ingredient.of(STARDUST_INGOT.get())));
+
     private ModItems() {}
 }

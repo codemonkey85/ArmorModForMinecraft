@@ -18,30 +18,30 @@ All paths are under `src/main/resources/assets/stardust/textures/`. Sizes are 16
 | `item/diamond_battle_axe.png` | placeholder | cyan diamond head |
 | `item/netherite_battle_axe.png` | placeholder | dark netherite head |
 | `item/stardust_battle_axe.png` | placeholder | violet stardust head |
-| `item/stone_bow.png` | TODO | idle |
-| `item/stone_bow_pulling_0.png` | TODO | charge stage 1 |
-| `item/stone_bow_pulling_1.png` | TODO | charge stage 2 |
-| `item/stone_bow_pulling_2.png` | TODO | charge stage 3 (full) |
-| `item/iron_bow.png` | TODO | idle |
-| `item/iron_bow_pulling_0.png` | TODO | charge stage 1 |
-| `item/iron_bow_pulling_1.png` | TODO | charge stage 2 |
-| `item/iron_bow_pulling_2.png` | TODO | charge stage 3 |
-| `item/golden_bow.png` | TODO | idle |
-| `item/golden_bow_pulling_0.png` | TODO | charge stage 1 |
-| `item/golden_bow_pulling_1.png` | TODO | charge stage 2 |
-| `item/golden_bow_pulling_2.png` | TODO | charge stage 3 |
-| `item/diamond_bow.png` | TODO | idle |
-| `item/diamond_bow_pulling_0.png` | TODO | charge stage 1 |
-| `item/diamond_bow_pulling_1.png` | TODO | charge stage 2 |
-| `item/diamond_bow_pulling_2.png` | TODO | charge stage 3 |
-| `item/netherite_bow.png` | TODO | idle |
-| `item/netherite_bow_pulling_0.png` | TODO | charge stage 1 |
-| `item/netherite_bow_pulling_1.png` | TODO | charge stage 2 |
-| `item/netherite_bow_pulling_2.png` | TODO | charge stage 3 |
-| `item/stardust_bow.png` | TODO | idle |
-| `item/stardust_bow_pulling_0.png` | TODO | charge stage 1 |
-| `item/stardust_bow_pulling_1.png` | TODO | charge stage 2 |
-| `item/stardust_bow_pulling_2.png` | TODO | charge stage 3 |
+| `item/stone_bow.png` | placeholder | idle |
+| `item/stone_bow_pulling_0.png` | placeholder | charge stage 1 |
+| `item/stone_bow_pulling_1.png` | placeholder | charge stage 2 |
+| `item/stone_bow_pulling_2.png` | placeholder | charge stage 3 (full) |
+| `item/iron_bow.png` | placeholder | idle |
+| `item/iron_bow_pulling_0.png` | placeholder | charge stage 1 |
+| `item/iron_bow_pulling_1.png` | placeholder | charge stage 2 |
+| `item/iron_bow_pulling_2.png` | placeholder | charge stage 3 |
+| `item/golden_bow.png` | placeholder | idle |
+| `item/golden_bow_pulling_0.png` | placeholder | charge stage 1 |
+| `item/golden_bow_pulling_1.png` | placeholder | charge stage 2 |
+| `item/golden_bow_pulling_2.png` | placeholder | charge stage 3 |
+| `item/diamond_bow.png` | placeholder | idle |
+| `item/diamond_bow_pulling_0.png` | placeholder | charge stage 1 |
+| `item/diamond_bow_pulling_1.png` | placeholder | charge stage 2 |
+| `item/diamond_bow_pulling_2.png` | placeholder | charge stage 3 |
+| `item/netherite_bow.png` | placeholder | idle |
+| `item/netherite_bow_pulling_0.png` | placeholder | charge stage 1 |
+| `item/netherite_bow_pulling_1.png` | placeholder | charge stage 2 |
+| `item/netherite_bow_pulling_2.png` | placeholder | charge stage 3 |
+| `item/stardust_bow.png` | placeholder | idle |
+| `item/stardust_bow_pulling_0.png` | placeholder | charge stage 1 |
+| `item/stardust_bow_pulling_1.png` | placeholder | charge stage 2 |
+| `item/stardust_bow_pulling_2.png` | placeholder | charge stage 3 |
 
 ## Worn armor layers
 
