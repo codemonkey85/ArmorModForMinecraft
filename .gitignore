@@ -17,6 +17,11 @@ out
 build
 .gradle
 
+# .NET
+bin
+obj
+*.user
+
 # other
 eclipse
 run
