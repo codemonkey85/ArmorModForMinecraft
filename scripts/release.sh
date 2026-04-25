@@ -87,6 +87,12 @@ fi
 
 CURRENT_VERSION="$(grep -E '^mod_version=' gradle.properties | cut -d= -f2)"
 
+if [[ "$CURRENT_VERSION" == "$VERSION" ]]; then
+    SKIP_BUMP=true
+else
+    SKIP_BUMP=false
+fi
+
 cat <<EOF
 About to release:
   current mod_version: $CURRENT_VERSION
@@ -94,11 +100,21 @@ About to release:
   tag:                 $TAG
 
 The script will:
+EOF
+if [[ "$SKIP_BUMP" == "true" ]]; then
+    cat <<EOF
+  1. Skip the version bump (already at $VERSION)
+  2. Create local tag $TAG on the current HEAD
+  3. Push the tag (which triggers release.yml)
+EOF
+else
+    cat <<EOF
   1. Bump mod_version in gradle.properties
   2. Commit "Release v$VERSION"
   3. Create local tag $TAG
   4. Push commit, then push tag (which triggers release.yml)
 EOF
+fi
 
 if [[ "$SKIP_CONFIRM" != "true" ]]; then
     read -p "Proceed? [y/N] " -n 1 -r REPLY
@@ -109,11 +125,13 @@ if [[ "$SKIP_CONFIRM" != "true" ]]; then
     fi
 fi
 
-sed -i.bak "s/^mod_version=.*/mod_version=$VERSION/" gradle.properties
-rm gradle.properties.bak
+if [[ "$SKIP_BUMP" != "true" ]]; then
+    sed -i.bak "s/^mod_version=.*/mod_version=$VERSION/" gradle.properties
+    rm gradle.properties.bak
+    git add gradle.properties
+    git commit -m "Release v$VERSION"
+fi
 
-git add gradle.properties
-git commit -m "Release v$VERSION"
 git tag "$TAG"
 
 git push origin main
