@@ -1,19 +1,16 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "S",
-    "S",
-    "X"
+    "III",
+    "III",
+    "III"
   ],
   "key": {
-    "S": {
+    "I": {
       "item": "stardust:stardust_ingot"
-    },
-    "X": {
-      "item": "stardust:star_stick"
     }
   },
   "result": {
-    "item": "stardust:stardust_sword"
+    "item": "stardust:stardust_block"
   }
 }

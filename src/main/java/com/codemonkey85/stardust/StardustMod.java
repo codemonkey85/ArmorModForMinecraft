@@ -1,5 +1,7 @@
 package com.codemonkey85.stardust;
 
+import com.codemonkey85.stardust.block.ModBlocks;
+import com.codemonkey85.stardust.entity.ModEntities;
 import com.codemonkey85.stardust.item.ModCreativeTabs;
 import com.codemonkey85.stardust.item.ModItems;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -12,7 +14,9 @@ public class StardustMod {
 
     public StardustMod() {
         IEventBus modBus = FMLJavaModLoadingContext.get().getModEventBus();
+        ModBlocks.BLOCKS.register(modBus);
         ModItems.ITEMS.register(modBus);
+        ModEntities.ENTITIES.register(modBus);
         ModCreativeTabs.TABS.register(modBus);
     }
 }

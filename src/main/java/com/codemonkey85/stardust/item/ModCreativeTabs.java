@@ -1,6 +1,7 @@
 package com.codemonkey85.stardust.item;
 
 import com.codemonkey85.stardust.StardustMod;
+import com.codemonkey85.stardust.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -18,6 +19,10 @@ public final class ModCreativeTabs {
                     .icon(() -> new ItemStack(ModItems.STARDUST_INGOT.get()))
                     .displayItems((params, output) -> {
                         output.accept(ModItems.STARDUST_INGOT.get());
+                        output.accept(ModItems.STARDUST_NUGGET.get());
+                        output.accept(ModBlocks.STARDUST_BLOCK.get());
+                        output.accept(ModItems.STAR_CORE.get());
+                        output.accept(ModItems.STAR_STICK.get());
                         output.accept(ModItems.STARDUST_HELMET.get());
                         output.accept(ModItems.STARDUST_CHESTPLATE.get());
                         output.accept(ModItems.STARDUST_LEGGINGS.get());
@@ -40,6 +45,7 @@ public final class ModCreativeTabs {
                         output.accept(ModItems.STARDUST_AXE.get());
                         output.accept(ModItems.STARDUST_SHOVEL.get());
                         output.accept(ModItems.STARDUST_HOE.get());
+                        output.accept(ModItems.STARDUST_TRIDENT.get());
                     })
                     .build());
 

@@ -1,12 +1,12 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "S",
-    "S",
-    "X"
+    "II ",
+    "IX ",
+    "  X"
   ],
   "key": {
-    "S": {
+    "I": {
       "item": "stardust:stardust_ingot"
     },
     "X": {
@@ -14,6 +14,6 @@
     }
   },
   "result": {
-    "item": "stardust:stardust_sword"
+    "item": "stardust:stardust_trident"
   }
 }
