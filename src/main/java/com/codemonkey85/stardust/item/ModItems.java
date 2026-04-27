@@ -19,6 +19,12 @@ public final class ModItems {
 
     public static final RegistryObject<Item> STARDUST_INGOT =
             ITEMS.register("stardust_ingot", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> STARDUST_NUGGET =
+            ITEMS.register("stardust_nugget", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> STAR_CORE =
+            ITEMS.register("star_core", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> STAR_STICK =
+            ITEMS.register("star_stick", () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> STARDUST_HELMET =
             ITEMS.register("stardust_helmet",
@@ -95,6 +101,10 @@ public final class ModItems {
     public static final RegistryObject<Item> STARDUST_HOE =
             ITEMS.register("stardust_hoe",
                     () -> new HoeItem(ModTiers.STARDUST, 0, 0.0F, new Item.Properties().fireResistant()));
+
+    public static final RegistryObject<Item> STARDUST_TRIDENT =
+            ITEMS.register("stardust_trident",
+                    () -> new StardustTridentItem(new Item.Properties().durability(2500).fireResistant()));
 
     private ModItems() {}
 }

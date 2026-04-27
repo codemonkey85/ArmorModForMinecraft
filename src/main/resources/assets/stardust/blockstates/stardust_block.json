@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "stardust:block/stardust_block"
+    }
+  }
+}

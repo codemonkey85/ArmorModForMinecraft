@@ -1,6 +1,10 @@
 {
   "itemGroup.stardust.stardust_tab": "Stardust",
   "item.stardust.stardust_ingot": "Stardust Ingot",
+  "item.stardust.stardust_nugget": "Stardust Nugget",
+  "item.stardust.star_core": "Star Core",
+  "item.stardust.star_stick": "Star Stick",
+  "block.stardust.stardust_block": "Block of Stardust",
   "item.stardust.stardust_helmet": "Stardust Helmet",
   "item.stardust.stardust_chestplate": "Stardust Chestplate",
   "item.stardust.stardust_leggings": "Stardust Leggings",
@@ -22,5 +26,7 @@
   "item.stardust.stardust_pickaxe": "Stardust Pickaxe",
   "item.stardust.stardust_axe": "Stardust Axe",
   "item.stardust.stardust_shovel": "Stardust Shovel",
-  "item.stardust.stardust_hoe": "Stardust Hoe"
+  "item.stardust.stardust_hoe": "Stardust Hoe",
+  "item.stardust.stardust_trident": "Stardust Trident",
+  "entity.stardust.thrown_stardust_trident": "Stardust Trident"
 }

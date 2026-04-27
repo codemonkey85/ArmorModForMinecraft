@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "B",
+    "C",
+    "B"
+  ],
+  "key": {
+    "B": {
+      "item": "minecraft:blaze_rod"
+    },
+    "C": {
+      "item": "stardust:star_core"
+    }
+  },
+  "result": {
+    "item": "stardust:star_stick"
+  }
+}

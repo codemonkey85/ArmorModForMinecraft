@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BBB",
+    "BNB",
+    "BBB"
+  ],
+  "key": {
+    "B": {
+      "item": "minecraft:blaze_rod"
+    },
+    "N": {
+      "item": "minecraft:nether_star"
+    }
+  },
+  "result": {
+    "item": "stardust:star_core"
+  }
+}

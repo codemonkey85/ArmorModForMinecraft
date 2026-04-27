@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "stardust:stardust_block"
+    }
+  ],
+  "result": {
+    "item": "stardust:stardust_ingot",
+    "count": 9
+  }
+}
