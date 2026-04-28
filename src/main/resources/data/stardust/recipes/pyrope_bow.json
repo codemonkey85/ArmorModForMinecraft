@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " #X",
+    "# X",
+    " #X"
+  ],
+  "key": {
+    "#": { "item": "stardust:pyrope_ingot" },
+    "X": { "item": "minecraft:string" }
+  },
+  "result": {
+    "item": "stardust:pyrope_bow"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "item/bow",
+  "textures": {
+    "layer0": "stardust:item/pyrope_bow_pulling_1"
+  }
+}

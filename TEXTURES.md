@@ -48,7 +48,7 @@ All paths are under `src/main/resources/assets/stardust/textures/`. Sizes are 16
 | `item/stardust_bow_pulling_1.png` | placeholder | charge stage 2 |
 | `item/stardust_bow_pulling_2.png` | placeholder | charge stage 3 |
 
-## Pyrope (red ore + speed-set armor)
+## Pyrope (red ore + speed-set armor + tool/weapon set)
 
 | Path | Status | Notes |
 |---|---|---|
@@ -61,6 +61,16 @@ All paths are under `src/main/resources/assets/stardust/textures/`. Sizes are 16
 | `item/pyrope_chestplate.png` | placeholder | chestplate silhouette |
 | `item/pyrope_leggings.png` | placeholder | leggings silhouette |
 | `item/pyrope_boots.png` | placeholder | boots silhouette |
+| `item/pyrope_sword.png` | placeholder | red diagonal blade |
+| `item/pyrope_pickaxe.png` | placeholder | red horizontal head |
+| `item/pyrope_axe.png` | real | red axe head |
+| `item/pyrope_shovel.png` | real | red spade |
+| `item/pyrope_hoe.png` | real | red hoe head |
+| `item/pyrope_battle_axe.png` | real | red double-bit head |
+| `item/pyrope_bow.png` | placeholder | idle |
+| `item/pyrope_bow_pulling_0.png` | placeholder | charge stage 1 |
+| `item/pyrope_bow_pulling_1.png` | placeholder | charge stage 2 |
+| `item/pyrope_bow_pulling_2.png` | placeholder | charge stage 3 (full) |
 
 ## Worn armor layers
 
@@ -81,6 +91,6 @@ Path: `models/armor/`. Standard Minecraft armor layer dimensions (64×32 PNGs).
 - 6 bows × 4 states = 24 bow item icons
 - 1 stardust ingot
 - 4 stardust armor worn-layer textures (incl. pyrope)
-- Pyrope: 3 block icons + 2 raw items + 4 armor item icons = 9
+- Pyrope: 3 block icons + 2 raw items + 4 armor item icons + 6 tool/weapon icons + 4 bow states = 19
 
-**Total: 50 item icons + 4 worn-armor layers = 54 textures.**
+**Total: 60 item icons + 4 worn-armor layers = 64 textures.**

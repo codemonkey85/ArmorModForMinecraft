@@ -1,7 +1,8 @@
 """Generate procedural placeholder PNGs for the Pyrope content set.
 
-Drop real art in by overwriting any of these files. The script is safe to
-re-run; it deterministically regenerates every placeholder.
+Drop real art in by overwriting any of these files. The script only writes
+the procedural placeholders listed in main(); it does not touch hand-made
+art for axe/hoe/battle_axe/shovel which were drawn by the artist.
 """
 from pathlib import Path
 import random
@@ -110,6 +111,57 @@ def boots() -> Image.Image:
     return img
 
 
+def sword() -> Image.Image:
+    img = Image.new("RGBA", (16, 16), TRANSPARENT)
+    draw = ImageDraw.Draw(img)
+    # diagonal blade from (3,12) to (12,3)
+    for i in range(10):
+        draw.point((3 + i, 12 - i), fill=PYROPE_MID)
+        draw.point((4 + i, 12 - i), fill=PYROPE_BRIGHT)
+    draw.rectangle([2, 12, 5, 13], fill=(96, 64, 32, 255))  # hilt
+    draw.point((1, 13), fill=(64, 40, 16, 255))
+    return img
+
+
+def pickaxe() -> Image.Image:
+    img = Image.new("RGBA", (16, 16), TRANSPARENT)
+    draw = ImageDraw.Draw(img)
+    draw.rectangle([2, 2, 13, 4], fill=PYROPE_MID)
+    draw.line([(2, 2), (13, 2)], fill=PYROPE_HIGHLIGHT)
+    # handle diagonal
+    for i in range(9):
+        draw.point((6 + i // 2, 5 + i), fill=(96, 64, 32, 255))
+    return img
+
+
+def bow_idle() -> Image.Image:
+    img = Image.new("RGBA", (16, 16), TRANSPARENT)
+    draw = ImageDraw.Draw(img)
+    # arc on the right side
+    arc_pts = [(11, 2), (12, 3), (13, 5), (13, 8), (13, 10), (12, 12), (11, 13)]
+    for x, y in arc_pts:
+        draw.point((x, y), fill=PYROPE_MID)
+    # string
+    draw.line([(10, 3), (10, 12)], fill=PYROPE_HIGHLIGHT)
+    return img
+
+
+def bow_pulling(stage: int) -> Image.Image:
+    """stage 0..2: increasing pull. String pulls inward as stage increases."""
+    img = Image.new("RGBA", (16, 16), TRANSPARENT)
+    draw = ImageDraw.Draw(img)
+    arc_pts = [(11, 2), (12, 3), (13, 5), (13, 8), (13, 10), (12, 12), (11, 13)]
+    for x, y in arc_pts:
+        draw.point((x, y), fill=PYROPE_MID)
+    string_x = 10 - stage  # 10, 9, 8
+    draw.line([(string_x, 3), (string_x, 12)], fill=PYROPE_HIGHLIGHT)
+    # arrow at full pull stages
+    if stage >= 1:
+        draw.line([(string_x - 3, 7), (string_x - 1, 7)], fill=(180, 180, 180, 255))
+        draw.line([(string_x - 3, 8), (string_x - 1, 8)], fill=(180, 180, 180, 255))
+    return img
+
+
 def armor_layer(amplifier: int) -> Image.Image:
     """64x32 worn-armor layer. amplifier=1 helmet/chest/boots, amplifier=2 leggings."""
     base = PYROPE_MID if amplifier == 1 else PYROPE_DARK
@@ -135,7 +187,13 @@ def main() -> None:
     save(boots(), ITEM_DIR / "pyrope_boots.png")
     save(armor_layer(1), ARMOR_DIR / "pyrope_layer_1.png")
     save(armor_layer(2), ARMOR_DIR / "pyrope_layer_2.png")
-    print("Generated 11 Pyrope placeholder textures.")
+    save(sword(), ITEM_DIR / "pyrope_sword.png")
+    save(pickaxe(), ITEM_DIR / "pyrope_pickaxe.png")
+    save(bow_idle(), ITEM_DIR / "pyrope_bow.png")
+    save(bow_pulling(0), ITEM_DIR / "pyrope_bow_pulling_0.png")
+    save(bow_pulling(1), ITEM_DIR / "pyrope_bow_pulling_1.png")
+    save(bow_pulling(2), ITEM_DIR / "pyrope_bow_pulling_2.png")
+    print("Generated 17 Pyrope placeholder textures.")
 
 
 if __name__ == "__main__":

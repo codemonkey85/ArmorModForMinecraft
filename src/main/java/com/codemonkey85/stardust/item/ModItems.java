@@ -124,5 +124,28 @@ public final class ModItems {
             ITEMS.register("pyrope_boots",
                     () -> new ArmorItem(ModArmorMaterials.PYROPE, ArmorItem.Type.BOOTS, new Item.Properties()));
 
+    public static final RegistryObject<Item> PYROPE_SWORD =
+            ITEMS.register("pyrope_sword",
+                    () -> new SwordItem(ModTiers.PYROPE, 3, -2.4F, new Item.Properties()));
+    public static final RegistryObject<Item> PYROPE_PICKAXE =
+            ITEMS.register("pyrope_pickaxe",
+                    () -> new PickaxeItem(ModTiers.PYROPE, 1, -2.8F, new Item.Properties()));
+    public static final RegistryObject<Item> PYROPE_AXE =
+            ITEMS.register("pyrope_axe",
+                    () -> new AxeItem(ModTiers.PYROPE, 6.0F, -3.1F, new Item.Properties()));
+    public static final RegistryObject<Item> PYROPE_SHOVEL =
+            ITEMS.register("pyrope_shovel",
+                    () -> new ShovelItem(ModTiers.PYROPE, 1.5F, -3.0F, new Item.Properties()));
+    public static final RegistryObject<Item> PYROPE_HOE =
+            ITEMS.register("pyrope_hoe",
+                    () -> new HoeItem(ModTiers.PYROPE, -1, -1.0F, new Item.Properties()));
+    public static final RegistryObject<Item> PYROPE_BATTLE_AXE =
+            ITEMS.register("pyrope_battle_axe",
+                    () -> new BattleAxeItem(ModTiers.PYROPE, 6.5F, -3.1F, new Item.Properties()));
+    public static final RegistryObject<Item> PYROPE_BOW =
+            ITEMS.register("pyrope_bow",
+                    () -> new TieredBowItem(new Item.Properties().durability(800), 17, 1.25f, 14,
+                            () -> net.minecraft.world.item.crafting.Ingredient.of(PYROPE_INGOT.get())));
+
     private ModItems() {}
 }

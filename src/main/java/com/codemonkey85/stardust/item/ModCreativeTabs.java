@@ -55,6 +55,13 @@ public final class ModCreativeTabs {
                         output.accept(ModItems.PYROPE_CHESTPLATE.get());
                         output.accept(ModItems.PYROPE_LEGGINGS.get());
                         output.accept(ModItems.PYROPE_BOOTS.get());
+                        output.accept(ModItems.PYROPE_SWORD.get());
+                        output.accept(ModItems.PYROPE_PICKAXE.get());
+                        output.accept(ModItems.PYROPE_AXE.get());
+                        output.accept(ModItems.PYROPE_SHOVEL.get());
+                        output.accept(ModItems.PYROPE_HOE.get());
+                        output.accept(ModItems.PYROPE_BATTLE_AXE.get());
+                        output.accept(ModItems.PYROPE_BOW.get());
                     })
                     .build());
 

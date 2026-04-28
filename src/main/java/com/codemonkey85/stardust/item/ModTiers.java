@@ -8,7 +8,9 @@ import java.util.function.Supplier;
 
 public enum ModTiers implements Tier {
     STARDUST(4, 2500, 12.0f, 5.0f, 18,
-            () -> Ingredient.of(ModItems.STARDUST_INGOT.get()));
+            () -> Ingredient.of(ModItems.STARDUST_INGOT.get())),
+    PYROPE(2, 750, 7.0f, 2.5f, 14,
+            () -> Ingredient.of(ModItems.PYROPE_INGOT.get()));
 
     private final int level;
     private final int uses;
