@@ -2,7 +2,7 @@
 
 Drop real art in by overwriting any of these files. The script only writes
 the procedural placeholders listed in main(); it does not touch hand-made
-art for axe/pickaxe/hoe/battle_axe/shovel which were drawn by the artist.
+art for sword/axe/pickaxe/hoe/battle_axe/shovel/boots which were drawn by the artist.
 """
 from pathlib import Path
 import random
@@ -102,27 +102,6 @@ def leggings() -> Image.Image:
     return img
 
 
-def boots() -> Image.Image:
-    img = Image.new("RGBA", (16, 16), TRANSPARENT)
-    draw = ImageDraw.Draw(img)
-    draw.rectangle([3, 8, 6, 14], fill=PYROPE_MID)
-    draw.rectangle([9, 8, 12, 14], fill=PYROPE_MID)
-    draw.rectangle([2, 12, 13, 14], fill=PYROPE_DARK)
-    return img
-
-
-def sword() -> Image.Image:
-    img = Image.new("RGBA", (16, 16), TRANSPARENT)
-    draw = ImageDraw.Draw(img)
-    # diagonal blade from (3,12) to (12,3)
-    for i in range(10):
-        draw.point((3 + i, 12 - i), fill=PYROPE_MID)
-        draw.point((4 + i, 12 - i), fill=PYROPE_BRIGHT)
-    draw.rectangle([2, 12, 5, 13], fill=(96, 64, 32, 255))  # hilt
-    draw.point((1, 13), fill=(64, 40, 16, 255))
-    return img
-
-
 def bow_idle() -> Image.Image:
     img = Image.new("RGBA", (16, 16), TRANSPARENT)
     draw = ImageDraw.Draw(img)
@@ -173,15 +152,13 @@ def main() -> None:
     save(helmet(), ITEM_DIR / "pyrope_helmet.png")
     save(chestplate(), ITEM_DIR / "pyrope_chestplate.png")
     save(leggings(), ITEM_DIR / "pyrope_leggings.png")
-    save(boots(), ITEM_DIR / "pyrope_boots.png")
     save(armor_layer(1), ARMOR_DIR / "pyrope_layer_1.png")
     save(armor_layer(2), ARMOR_DIR / "pyrope_layer_2.png")
-    save(sword(), ITEM_DIR / "pyrope_sword.png")
     save(bow_idle(), ITEM_DIR / "pyrope_bow.png")
     save(bow_pulling(0), ITEM_DIR / "pyrope_bow_pulling_0.png")
     save(bow_pulling(1), ITEM_DIR / "pyrope_bow_pulling_1.png")
     save(bow_pulling(2), ITEM_DIR / "pyrope_bow_pulling_2.png")
-    print("Generated 16 Pyrope placeholder textures.")
+    print("Generated 14 Pyrope placeholder textures.")
 
 
 if __name__ == "__main__":
