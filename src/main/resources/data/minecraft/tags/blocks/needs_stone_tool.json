@@ -1,7 +1,6 @@
 {
   "replace": false,
   "values": [
-    "stardust:stardust_block",
     "stardust:pyrope_ore",
     "stardust:deepslate_pyrope_ore",
     "stardust:pyrope_block"

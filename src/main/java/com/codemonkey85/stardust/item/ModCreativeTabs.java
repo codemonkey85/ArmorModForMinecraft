@@ -46,6 +46,15 @@ public final class ModCreativeTabs {
                         output.accept(ModItems.STARDUST_SHOVEL.get());
                         output.accept(ModItems.STARDUST_HOE.get());
                         output.accept(ModItems.STARDUST_TRIDENT.get());
+                        output.accept(ModBlocks.PYROPE_ORE.get());
+                        output.accept(ModBlocks.DEEPSLATE_PYROPE_ORE.get());
+                        output.accept(ModBlocks.PYROPE_BLOCK.get());
+                        output.accept(ModItems.PYROPE_INGOT.get());
+                        output.accept(ModItems.PYROPE_NUGGET.get());
+                        output.accept(ModItems.PYROPE_HELMET.get());
+                        output.accept(ModItems.PYROPE_CHESTPLATE.get());
+                        output.accept(ModItems.PYROPE_LEGGINGS.get());
+                        output.accept(ModItems.PYROPE_BOOTS.get());
                     })
                     .build());
 

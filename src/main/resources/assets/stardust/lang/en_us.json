@@ -28,5 +28,14 @@
   "item.stardust.stardust_shovel": "Stardust Shovel",
   "item.stardust.stardust_hoe": "Stardust Hoe",
   "item.stardust.stardust_trident": "Stardust Trident",
-  "entity.stardust.thrown_stardust_trident": "Stardust Trident"
+  "entity.stardust.thrown_stardust_trident": "Stardust Trident",
+  "block.stardust.pyrope_ore": "Pyrope Ore",
+  "block.stardust.deepslate_pyrope_ore": "Deepslate Pyrope Ore",
+  "block.stardust.pyrope_block": "Block of Pyrope",
+  "item.stardust.pyrope_ingot": "Pyrope Ingot",
+  "item.stardust.pyrope_nugget": "Pyrope Nugget",
+  "item.stardust.pyrope_helmet": "Pyrope Helmet",
+  "item.stardust.pyrope_chestplate": "Pyrope Chestplate",
+  "item.stardust.pyrope_leggings": "Pyrope Leggings",
+  "item.stardust.pyrope_boots": "Pyrope Boots"
 }

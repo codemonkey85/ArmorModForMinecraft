@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": [
+    { "item": "stardust:pyrope_ore" },
+    { "item": "stardust:deepslate_pyrope_ore" }
+  ],
+  "result": "stardust:pyrope_ingot",
+  "experience": 0.7,
+  "cookingtime": 100
+}

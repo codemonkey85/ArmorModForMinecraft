@@ -27,7 +27,22 @@ public enum ModArmorMaterials implements ArmorMaterial {
                 m.put(ArmorItem.Type.BOOTS, 4);
             }),
             18, SoundEvents.ARMOR_EQUIP_NETHERITE, 4.0f, 0.15f,
-            () -> Ingredient.of(ModItems.STARDUST_INGOT.get()));
+            () -> Ingredient.of(ModItems.STARDUST_INGOT.get())),
+    PYROPE(StardustMod.MOD_ID + ":pyrope", 25,
+            Util.make(new EnumMap<>(ArmorItem.Type.class), m -> {
+                m.put(ArmorItem.Type.HELMET, 11);
+                m.put(ArmorItem.Type.CHESTPLATE, 16);
+                m.put(ArmorItem.Type.LEGGINGS, 15);
+                m.put(ArmorItem.Type.BOOTS, 13);
+            }),
+            Util.make(new EnumMap<>(ArmorItem.Type.class), m -> {
+                m.put(ArmorItem.Type.HELMET, 2);
+                m.put(ArmorItem.Type.CHESTPLATE, 6);
+                m.put(ArmorItem.Type.LEGGINGS, 5);
+                m.put(ArmorItem.Type.BOOTS, 2);
+            }),
+            12, SoundEvents.ARMOR_EQUIP_IRON, 1.0f, 0.0f,
+            () -> Ingredient.of(ModItems.PYROPE_INGOT.get()));
 
     private final String name;
     private final int durabilityMultiplier;

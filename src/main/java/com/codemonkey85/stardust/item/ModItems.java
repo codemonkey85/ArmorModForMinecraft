@@ -106,5 +106,23 @@ public final class ModItems {
             ITEMS.register("stardust_trident",
                     () -> new StardustTridentItem(new Item.Properties().durability(2500).fireResistant()));
 
+    public static final RegistryObject<Item> PYROPE_INGOT =
+            ITEMS.register("pyrope_ingot", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> PYROPE_NUGGET =
+            ITEMS.register("pyrope_nugget", () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> PYROPE_HELMET =
+            ITEMS.register("pyrope_helmet",
+                    () -> new ArmorItem(ModArmorMaterials.PYROPE, ArmorItem.Type.HELMET, new Item.Properties()));
+    public static final RegistryObject<Item> PYROPE_CHESTPLATE =
+            ITEMS.register("pyrope_chestplate",
+                    () -> new ArmorItem(ModArmorMaterials.PYROPE, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+    public static final RegistryObject<Item> PYROPE_LEGGINGS =
+            ITEMS.register("pyrope_leggings",
+                    () -> new ArmorItem(ModArmorMaterials.PYROPE, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+    public static final RegistryObject<Item> PYROPE_BOOTS =
+            ITEMS.register("pyrope_boots",
+                    () -> new ArmorItem(ModArmorMaterials.PYROPE, ArmorItem.Type.BOOTS, new Item.Properties()));
+
     private ModItems() {}
 }

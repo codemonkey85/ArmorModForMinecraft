@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    { "item": "stardust:pyrope_block" }
+  ],
+  "result": {
+    "item": "stardust:pyrope_ingot",
+    "count": 9
+  }
+}

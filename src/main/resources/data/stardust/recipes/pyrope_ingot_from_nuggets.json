@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "NNN",
+    "NNN",
+    "NNN"
+  ],
+  "key": {
+    "N": { "item": "stardust:pyrope_nugget" }
+  },
+  "result": {
+    "item": "stardust:pyrope_ingot"
+  }
+}
