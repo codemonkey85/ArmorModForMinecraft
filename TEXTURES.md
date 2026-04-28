@@ -62,7 +62,7 @@ All paths are under `src/main/resources/assets/stardust/textures/`. Sizes are 16
 | `item/pyrope_leggings.png` | placeholder | leggings silhouette |
 | `item/pyrope_boots.png` | placeholder | boots silhouette |
 | `item/pyrope_sword.png` | placeholder | red diagonal blade |
-| `item/pyrope_pickaxe.png` | placeholder | red horizontal head |
+| `item/pyrope_pickaxe.png` | real | red horizontal head |
 | `item/pyrope_axe.png` | real | red axe head |
 | `item/pyrope_shovel.png` | real | red spade |
 | `item/pyrope_hoe.png` | real | red hoe head |

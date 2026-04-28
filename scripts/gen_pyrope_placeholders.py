@@ -2,7 +2,7 @@
 
 Drop real art in by overwriting any of these files. The script only writes
 the procedural placeholders listed in main(); it does not touch hand-made
-art for axe/hoe/battle_axe/shovel which were drawn by the artist.
+art for axe/pickaxe/hoe/battle_axe/shovel which were drawn by the artist.
 """
 from pathlib import Path
 import random
@@ -123,17 +123,6 @@ def sword() -> Image.Image:
     return img
 
 
-def pickaxe() -> Image.Image:
-    img = Image.new("RGBA", (16, 16), TRANSPARENT)
-    draw = ImageDraw.Draw(img)
-    draw.rectangle([2, 2, 13, 4], fill=PYROPE_MID)
-    draw.line([(2, 2), (13, 2)], fill=PYROPE_HIGHLIGHT)
-    # handle diagonal
-    for i in range(9):
-        draw.point((6 + i // 2, 5 + i), fill=(96, 64, 32, 255))
-    return img
-
-
 def bow_idle() -> Image.Image:
     img = Image.new("RGBA", (16, 16), TRANSPARENT)
     draw = ImageDraw.Draw(img)
@@ -188,12 +177,11 @@ def main() -> None:
     save(armor_layer(1), ARMOR_DIR / "pyrope_layer_1.png")
     save(armor_layer(2), ARMOR_DIR / "pyrope_layer_2.png")
     save(sword(), ITEM_DIR / "pyrope_sword.png")
-    save(pickaxe(), ITEM_DIR / "pyrope_pickaxe.png")
     save(bow_idle(), ITEM_DIR / "pyrope_bow.png")
     save(bow_pulling(0), ITEM_DIR / "pyrope_bow_pulling_0.png")
     save(bow_pulling(1), ITEM_DIR / "pyrope_bow_pulling_1.png")
     save(bow_pulling(2), ITEM_DIR / "pyrope_bow_pulling_2.png")
-    print("Generated 17 Pyrope placeholder textures.")
+    print("Generated 16 Pyrope placeholder textures.")
 
 
 if __name__ == "__main__":
